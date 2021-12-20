@@ -1,0 +1,7 @@
+"Main.ipynb" is the file you need to use to run the program. It will call functions from "functions.py" and it will need two input files.
+
+Input files:
+- The files with extension ".tf" represent neural networks. To easily check how the neural networks are written, see "example_network.tf". It is the network used for the example in subsection 3.5.1.
+- The files with extension ".csv" represent the inputs to provide to the networks. "mnist_test_100.csv" contains the first 100 images from the MNIST test dataset. Each line in that file corresponds to a picture. The first number in each line represents the label for the picture in that line. All neural networks are to be used together with "mnist_test_100.csv", apart from "example_network.tf", which cannot be run with it. I provided the file "example.csv" for "example_network.tf" (notice that if you run the program using "example.csv" and "example_network.tf" with epsilon=1, you obtain the example seen in subsection 3.5.1).
+
+To run the code with a certain network you need to write the name of that network in line 4 of the second cell containing code of the file "Main.ipynb". To change the other input file (with extension ".csv"), change line 3 of the third cell containing code in "Main.ipynb".
